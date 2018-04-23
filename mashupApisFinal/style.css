@@ -1,0 +1,209 @@
+@font-face {
+  font-family: SentyTang;
+  src: local("SentyTang"), url(SentyTang.ttf);
+  font-weight: bold;
+}
+
+img {
+  /*margin: 10px 10px;*/
+  border-radius: 50%;
+}
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  padding: 8px 8px;
+  /*margin:0;*/
+  background-color: #FF9900;
+  color: red;
+  overflow: auto;
+  font-family: "Grammara";
+  font-size: 20px;
+}
+
+.topnav a {
+  padding-bottom: 10px;
+  text-align: center;
+  padding: 9px 14px;
+  text-decoration: none;
+}
+
+.names {
+  color: black;
+  font-size: 17px;
+}
+
+.names:hover {
+  background-color: red;
+  color: gold;
+}
+
+.lyrics {
+  margin-top: 36%;
+  display: none;
+  background-color: #FF9900;
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "SentyTang";
+  font-size: 20pt;
+  box-shadow: 5px 10px rgba(0, 0, 0, .2);
+  /*animation:type 2s steps(24);
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid #000;*/
+}
+
+/*@keyframes type {
+  from{
+    width:0;
+
+  }
+  to{
+    width:400px;
+
+  }
+}*/
+
+/*.lyrics-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}*/
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 0px);
+}
+
+svg {
+  width: 386px;
+  height: 284px;
+}
+
+svg:hover {
+  cursor: pointer;
+  width: 386px;
+  height: 284px;
+}
+
+.Svgs {
+  padding-bottom: 170px;
+  position: absolute;
+  /*padding: 20px;*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#sideA {}
+
+#sideA.on {
+  animation: flip 0.9s linear alternate;
+  /*animation: flip ;*/
+  /*animation-iteration-count:1;*/
+  /*animation-duration: 4s;*/
+}
+
+#sideB.on {
+  animation: flip 0.9s linear alternate;
+  /*animation: flip ;*/
+  /*animation-iteration-count:1;*/
+  /*animation-duration: 4s;*/
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(2000px) rotateY(90deg) skewY(-1deg)
+  }
+  30% {
+    transform: perspective(2000px) rotateY(-25deg) skewY(-0.8deg)
+  }
+  50% {
+    transform: perspective(2000px) rotateY(20deg) skewY(0.8deg)
+  }
+  70% {
+    transform: perspective(2000px) rotateY(-10deg) skewY(-0.8deg)
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg)
+  }
+}
+
+#sideB {
+  display: none;
+}
+
+.Songs {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  font-family: "Grammara";
+  font-size: 6px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  color: gold;
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  margin-top: 37%;
+  font-family: "Grammara";
+  font-size: 28px;
+  width: 100%;
+  color: #FF9900;
+  text-shadow: 2px 2px #E2483D;
+  text-align: center;
+  /*left: 15pt;*/
+}
+
+.title span {
+  padding-top: 30pt;
+  position: relative;
+  display: inline-block;
+  animation: animate 0.9s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-30px);
+  }
+  15% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  /*30%{
+    transform:translateY(0px);
+  }*/
+}
+
+.the-track {
+  display: none;
+  position: absolute;
+  margin-top: 40%;
+  font-family: "Grammara";
+  font-size: 6px;
+  width: 100%;
+  /*left: 15pt;*/
+  /*background-color: red;*/
+  color: gold;
+  text-align: center;
+}
