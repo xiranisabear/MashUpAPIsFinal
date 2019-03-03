@@ -11,7 +11,7 @@ var app = {
 
   getToken: function(word) {
     var id = '174bb61ac14e4cb8818995d5c54bd4d3';
-    var secret = 'dcef21fc7bdb4c3c8ee8d12dc2ca1a0f';
+    var secret = 'd29300baa4074277a35f70087a90d588';
     //this base encodes your id and secret to pass to the spotify server
     var encoded = btoa(id + ':' + secret);
     $.ajax({
